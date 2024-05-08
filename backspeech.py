@@ -16,14 +16,11 @@ def recognize_speech():
 
         if "Run my website" in command:
             project_directory_backend = "D:/MERN app/backend/server"
-            
-            # Navigate to the frontend directory
+                     
             os.chdir(project_directory_backend)
-            # Start frontend
-            os.system("npm run start")
-
-            # Navigate to the backend directory
            
+            os.system("npm run start")
+                   
 
     except sr.UnknownValueError:
         print("Could not understand audio")
